@@ -1,7 +1,6 @@
 import { Body, Controller, Delete, Get, Param, ParseIntPipe, Post, Put } from '@nestjs/common';
 import { ContactService } from '../../models/contact/contact.service';
 import { Contact as ContactModel, Prisma } from '@prisma/client';
-import { ContactModule } from './contact.module';
 
 @Controller('contacts')
 export class ContactController {
